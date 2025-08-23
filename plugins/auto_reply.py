@@ -13,7 +13,7 @@ lock = asyncio.Lock()
 async def auto_reply(bot, message):
     async with lock:
         try:
-            reply = await message.reply_text('''𝐘𝐎𝐔𝐑 𝐌𝐎𝐕𝐈𝐄 𝐋𝐈𝐍𝐊 𝐈𝐍 𝐌𝐘 𝐏𝐑𝐎𝐅𝐈𝐋𝐄 𝐁𝐈𝐎 𝐂𝐇𝐄𝐂𝐊 𝐀𝐍𝐃 𝐒𝐄𝐀𝐑𝐂𝐇
+            reply = await message.reply_text('''Υσυя мσνιє ιѕ ιη му ƀισ, ρℓєαѕє cнєcк му ρяσƒιℓє.
 ''', reply_to_message_id=message.id)
 
             await asyncio.sleep(2)
