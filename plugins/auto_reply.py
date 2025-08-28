@@ -12,7 +12,7 @@ lock = asyncio.Lock()
 @Client.on_message(filters.chat(FROM_GRP) & ~filters.bot)
 async def auto_reply(bot, message):
     try:
-        reply = await message.reply_text('''Yₒᵤᵣ ₘₒᵥᵢₑ ᵢₛ ᵢₙ ₘy ₚᵣₒfᵢₗₑ ₚₗₑₐₛₑ Cₕₑcₖ ₘy Bᵢₒ
+        reply = await message.reply_text('''Υσυя мσνιє ιѕ ιη му ƀισ, ρℓєαѕє cнєcк му ρяσƒιℓє.
 ''', reply_to_message_id=message.id)
         await asyncio.sleep(60)
         try:
