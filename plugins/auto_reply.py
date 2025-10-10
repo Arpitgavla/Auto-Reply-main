@@ -16,7 +16,7 @@ async def auto_reply(bot, message):
 ''', reply_to_message_id=message.id)
         await asyncio.sleep(60)
         try:
-            await asyncio.sleep(43200)
+            await asyncio.sleep(10)
             await reply.delete()
         except:
             pass
