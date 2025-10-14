@@ -13,7 +13,7 @@ def is_enabled(value, default):
 SESSION = environ.get("SESSION", "N2 Auto Reply Bot")
 API_ID = 24380477
 API_HASH = "dd131f5648d254a669a629e54039940e"
-USER_SESSION = environ.get("USER_SESSION", "BQF0BD0ATz3ZPaNQca2-nVx0KCkRHQwOCzQJo14yWe5FMLBKWxoLRhFfxk8nJ4F7LwnKPjbHMnm3K8ZAF0VDbz8MrURbOm0GvUYF-hjcWNbuXKZqZGguEZdoxw8TFYIDk4Y39Jg5AbtfFlc6vwtiiedIQrpzGPDgP6lUDU6ReeX6oRfWrIot6sviciplJjeCrMzX_wVQpbGC1oSq87ebo1BGUmsI4aLQ5IcI4UK1yAFbtfD3n0TRYYCJsMPUMZ9ap57JFyrKcEcY3qM57byKYKx1cf_KyCZu9ECMCRZiLcxgZhWGiYuv-jSxRk_oYWrSukpxjotlh9DNzBKwsULWsLSCW8UCOAAAAAFyRFSnAA")
+USER_SESSION = environ.get("USER_SESSION", "")
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002074744533"))
 FROM_GRP = [int(channel_id) for channel_id in environ.get('FROM_GRP', '').split() if re.match(r'^-?\d+$', channel_id)]
 PORT = int(environ.get("PORT", "8080"))
