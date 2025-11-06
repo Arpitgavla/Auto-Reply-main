@@ -27,11 +27,6 @@ Search your movies here''',
             reply_to_message_id=message.id
         )
         await asyncio.sleep(60)
-        try:
-            await asyncio.sleep(3600)
-            await reply.delete()
-        except:
-            pass
     except FloodWait as e:
         logger.warning(f"Got FloodWait.\n\nWaiting for {e.value} seconds.")
         await asyncio.sleep(e.value + 2)
