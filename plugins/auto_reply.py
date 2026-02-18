@@ -14,19 +14,10 @@ async def auto_reply(bot, message):
     async with lock:
         try:
             reply = await message.reply_text(
-            '''Search your movies here
-@Arpitpatidar
-@Arpitpatidar
-@Arpitpatidar
-
-@Arpitpatidar
-@Arpitpatidar
-@Arpitpatidar
-
-Search your movies here''',
+            '''ʏօʊʀ ʍօʋɨɛ ɨռ ʍʏ քʀօʄɨʟɛ քʟɛǟֆɛ ƈɦɛƈӄ''',
             reply_to_message_id=message.id
                 )
-            await asyncio.sleep(60)
+            await asyncio.sleep(10)
         except FloodWait as e:
             logger.warning(f"Got FloodWait.\n\nWaiting for {e.value} seconds.")
             await asyncio.sleep(e.value + 2)
